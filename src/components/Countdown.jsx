@@ -6,7 +6,7 @@ const Countdown = () => {
   const [isLive, setIsLive] = useState(false);
 
   function calculateTimeLeft() {
-    const launchDate = new Date("2026-01-08T00:00:00+05:30"); // 8 Jan 2026 IST
+    const launchDate = new Date("2026-01-15T00:00:00+05:30"); // 8 Jan 2026 IST
     const now = new Date();
     const difference = launchDate - now;
 
@@ -111,3 +111,4 @@ const Countdown = () => {
 };
 
 export default Countdown;
+
