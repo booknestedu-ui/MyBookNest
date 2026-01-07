@@ -6,7 +6,7 @@ const Countdown = () => {
   const [isLive, setIsLive] = useState(false);
 
   function calculateTimeLeft() {
-    const launchDate = new Date("2026-01-15T00:00:00+05:30"); // 8 Jan 2026 IST
+    const launchDate = new Date("2026-01-15T00:00:00+05:30"); // 15 Jan 2026 IST
     const now = new Date();
     const difference = launchDate - now;
 
@@ -92,7 +92,7 @@ const Countdown = () => {
           viewport={{ once: true }}
           className="text-xl text-gray-600 font-medium mb-10"
         >
-          Launching on 8 January
+          Launching on 15 January
         </motion.h3>
         <div className="flex justify-center flex-wrap">
           <TimeBox value={timeLeft.days} label="Days" delay={0} />
@@ -111,4 +111,3 @@ const Countdown = () => {
 };
 
 export default Countdown;
-
